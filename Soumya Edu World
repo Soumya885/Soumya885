@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About science and Mathematics Notes.">
+    <title>Soumya Edu World</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: url('https://via.placeholder.com/1920x1080?text=Background+Image') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        header {
+            background: rgba(255, 165, 0, 0.8); /* Orange with transparency */
+            color: #000;
+            padding: 1.5em 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            background: #fff;
+            text-align: center;
+            padding: 1em;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #007BFF;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h3 {
+            color: #333;
+        }
+
+        .highlight {
+            background: #ffeb3b;
+            padding: 0 5px;
+            border-radius: 4px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        button {
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 20px auto;
+            display: block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+        }
+
+        .scroll-to-top:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Soumya Edu World</h1>
+    <p>A deep knowledge about Math and Science.</p>
+</header>
+
+<nav>
+    <a href="#Physics">Physics</a>
+    <a href="#Chemistry">Chemistry</a>
+    <a href="#Biology">Biology</a>
+    <a href="#Math">Math</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+    <section id="Physics">
+        <h1>Physics</h1>
+        <h3>Chapters of Physics</h3>
+        <ul>
+            <li>1. Motion</li>
+            <li>2. Gravitation</li>
+            <li>3. Work, Power, and Energy</li>
+        </ul>
+    </section>
+
+    <section id="Chemistry">
+        <h1>Chemistry</h1>
+        <h3>Chapters of Chemistry</h3>
+        <ul>
+            <li>1. Matter in Our Surroundings</li>
+            <li>2. Is Matter Around Us Pure?</li>
+            <li>3. Atoms and Molecules</li>
+            <li>4. Structure of Atom</li>
+        </ul>
+    </section>
+
+    <section id="Biology">
+        <h1>Biology</h1>
+        <h3>Chapters of Biology</h3>
+        <ul>
+            <li>1. The Fundamental Unit of Life</li>
+            <li>2. Tissues</li>
+        </ul>
+    </section>
+
+    <section id="Math">
+        <h1>Math</h1>
+        <h3>Chapters of Mathematics</h3>
+        <ul>
+            <li>1. Number System</li>
+            <li>2. Polynomials</li>
+            <li>3. Coordinate Geometry</li>
+            <li>4. Linear Equations with Two Variables</li>
+            <li>5. Euclid's Geometry</li>
+            <li>6. Lines and Angles</li>
+            <li>7. Triangles</li>
+            <li>8. Quadrilaterals</li>
+            <li>9. Circles</li>
+            <li>10. Heron's Formula</li>
+            <li>11. Surface Area and Volume</li>
+            <li>12. Statistics</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>Email: <mark>braja.96925212@Gmail.Com</mark></p>
+    </section>
+</main>
+
+<button onclick="navigateNext()">Next Page</button>
+
+<footer>
+    <p>© 2024 Soumya Edu World | Designed with HTML by Soumya</p>
+</footer>
+
+<div class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">↑</div>
+
+<script>
+    // Scroll to top button
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+    window.onscroll = function () {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function navigateNext() {
+        alert("Navigating to the next page...");
+        // Add navigation logic here
+    }
+</script>
+
+</body>
+</html>
